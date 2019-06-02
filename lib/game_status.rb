@@ -15,5 +15,10 @@ WIN_COMBINATIONS =[
   [2, 4, 6]
 ]
 
-def won?()
+def won?(board)
+  WIN_COMBINATIONS.each do | win_comb |
+    if board[win_comb[0]] == board[win_comb[1]] == board[win_comb[2]] 
+      return true
+    end
+  end  
 end
