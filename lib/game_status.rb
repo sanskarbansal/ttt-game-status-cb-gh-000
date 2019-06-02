@@ -51,4 +51,5 @@ def winner(board)
     if flag
       return "O"
     end
+  end
 end
