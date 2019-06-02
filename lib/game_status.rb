@@ -25,7 +25,9 @@ def won?(board)
       return true
     end
     flag = win_comb.all?{|s| board[s]=="O"}
-    if flag { return true }
+    if flag
+       return true
+     end
   end
   return false
 end
