@@ -41,4 +41,14 @@ def over?(board)
 end
 
 def winner(board)
+  if !won?(board){ return nil }
+  WIN_COMBINATIONS.each do | win_comb |
+    flag = win_comb.all?{ |s| board[s] == "X"}
+    if flag
+      return win_comb
+    end
+    flag = win_comb.all?{|s| board[s]=="O"}
+    if flag
+      return win_comb
+    end
 end
