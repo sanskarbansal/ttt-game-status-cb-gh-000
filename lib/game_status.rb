@@ -45,10 +45,10 @@ def winner(board)
   WIN_COMBINATIONS.each do | win_comb |
     flag = win_comb.all?{ |s| board[s] == "X"}
     if flag
-      return win_comb
+      return "X"
     end
     flag = win_comb.all?{|s| board[s]=="O"}
     if flag
-      return win_comb
+      return "O"
     end
 end
