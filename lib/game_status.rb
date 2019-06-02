@@ -20,7 +20,7 @@ def won?(board)
     # if board[win_comb[0]] == board[win_comb[1]] == board[win_comb[2]]
     #   return true
     # end
-    win_comb.all? do |s| 
+    win_comb.all? do |s|
       board[s] == "X"
     end
   end
