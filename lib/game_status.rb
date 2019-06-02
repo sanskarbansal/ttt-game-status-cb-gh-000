@@ -31,3 +31,4 @@ end
 
 def full?(board)
   board.all?{|el| !(el==nil || el == " ")}
+end
